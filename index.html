@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Quieres volverlo a intentar 💕</title>
+    <style>
+        .body {
+            background-color: crimson;
+            text-align: center;
+        }
+
+        .body__title {
+            color: white;
+        }
+
+         .body__img{
+            width: 100%;
+            border-radius: 20%;
+         }
+    </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">💕Quieres volverlo a intentar💕</h1>
+  <img 
+    src="https://memegenerator.net/img/instances/23867080/te-gustaria-volver-a-ser-mi-novia.jpg" 
+    alt="foto de mi peticion" class="body__img"/>
+  <button id="yes">SI quiero volver💕</button>
+  <button id="no" >No quiero volver💔</button>
+
+  <script>
+    const vutonsi = document.getElementById('yes');
+    const vutonno = document.getElementById('no');
+
+    const somosnovios = () => {
+        alert('💕Somos novios💕');
+        alert('Nos vemos mañana BB');
+        location.href ='https://www.youtube.com/watch?v=IQPhLCkUugw=14s';
+    };
+
+    const evitarquemerompaelcorazon = () => {
+        vutonno.style.position = 'absolute';
+        vutonno.style.top = (Math.random()* window.innerHeight) + 'px';
+        vutonno.style.left = (Math.random()* window.innerWidth) + 'px';
+    };
+
+    vutonsi.addEventListener('click', somosnovios);
+    vutonno.addEventListener('mouseover',evitarquemerompaelcorazon);
+  </script>
+  </body>
+
+</html>
